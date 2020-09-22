@@ -1,0 +1,12 @@
+* .iml
+.gradle
+/ local.properties
+/ .idea / workspace.xml
+/ .idea / modules.xml
+/ .idea / bibliotecas
+.idéia
+.DS_Store
+/ build
+/ capturas
+.externalNativeBuild
+/ app / google-services.json
