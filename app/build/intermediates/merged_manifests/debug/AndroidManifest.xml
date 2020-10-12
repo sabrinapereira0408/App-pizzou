@@ -8,6 +8,8 @@
         android:minSdkVersion="28"
         android:targetSdkVersion="30" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -19,11 +21,20 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="br.com.sg2l2.pizzou.configActivity" />
-        <activity android:name="br.com.sg2l2.pizzou.PromocaoActivity" />
+        <activity android:name="br.com.sg2l2.pizzou.CardapioDetailActivity" />
+        <activity
+            android:name="br.com.sg2l2.pizzou.ConfigActivity"
+            android:theme="@style/AppTheme.Toolbar" />
+        <activity
+            android:name="br.com.sg2l2.pizzou.PromocaoActivity"
+            android:theme="@style/AppTheme.Toolbar" />
         <activity android:name="br.com.sg2l2.pizzou.TaxaEntregaActivity" />
-        <activity android:name="br.com.sg2l2.pizzou.TelaInicialActivity" />
-        <activity android:name="br.com.sg2l2.pizzou.MenuActivity" />
+        <activity
+            android:name="br.com.sg2l2.pizzou.CardapioActivity"
+            android:theme="@style/AppTheme.Toolbar" />
+        <activity
+            android:name="br.com.sg2l2.pizzou.MenuActivity"
+            android:theme="@style/AppTheme.Toolbar" />
         <activity android:name="br.com.sg2l2.pizzou.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

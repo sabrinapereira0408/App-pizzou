@@ -1,7 +1,14 @@
 <resources>
     <string name="app_name">Di Vitto Pizzaria</string>
-    <string name="action_buscar">saindo</string>
-    <string name="action_atualizar">atualizando</string>
+    <string name="action_buscar">Buscar</string>
+    <string name="action_atualizar">Atualizar</string>
     <string name="action_config">Configurações</string>
-    <string name="action_sair">Saindo</string>
+    <string name="action_sair">Sair</string>
+    <string name="nav_promocao">Promoções</string>
+    <string name="nav_cardapio">Cardápio</string>
+    <string name="nav_mensagens">Mensagens</string>
+    <string name="nav_localizacao">Localização</string>
+    <string name="nav_configuracoes">Configurações</string>
+    <string name="nav_abrir">Abrir</string>
+    <string name="nav_fechar">Fechar</string>
 </resources>

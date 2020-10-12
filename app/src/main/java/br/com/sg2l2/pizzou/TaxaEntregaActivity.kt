@@ -7,7 +7,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 
-class TaxaEntregaActivity : AppCompatActivity() {
+class TaxaEntregaActivity : DebugActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_taxaentrega)
@@ -24,14 +24,9 @@ class TaxaEntregaActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem) : Boolean {
         val id = item?.itemId
-        if (id == R.id.action_sair) {
-            Toast.makeText(this, "Saindo", Toast.LENGTH_LONG).show()
-            val intent: Intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
-        else if (id == R.id.action_config) {
+        if (id == R.id.action_config) {
             Toast.makeText(this,"Configurações", Toast.LENGTH_LONG).show()
-            val intent: Intent = Intent(this, configActivity::class.java)
+            val intent: Intent = Intent(this, ConfigActivity::class.java)
             startActivity(intent)
         }
         else if (id == android.R.id.home) {
