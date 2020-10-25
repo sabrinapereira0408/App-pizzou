@@ -112,6 +112,10 @@
         "source": "C:\\Users\\User\\Desktop\\Faculdade\\App-pizzou\\app\\src\\main\\res\\layout\\activity_taxaentrega.xml"
     },
     {
+        "merged": "C:\\Users\\User\\Desktop\\Faculdade\\App-pizzou\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_novo_produto.xml.flat",
+        "source": "C:\\Users\\User\\Desktop\\Faculdade\\App-pizzou\\app\\src\\main\\res\\layout\\activity_novo_produto.xml"
+    },
+    {
         "merged": "C:\\Users\\User\\Desktop\\Faculdade\\App-pizzou\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_adicionar_black.png.flat",
         "source": "C:\\Users\\User\\Desktop\\Faculdade\\App-pizzou\\app\\src\\main\\res\\drawable-v24\\ic_adicionar_black.png"
     },

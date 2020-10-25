@@ -35,17 +35,26 @@ class CardapioActivity: DebugActivity() {
 
     override fun onResume() {
         super.onResume()
-        taskDisciplinas()
+        taskCardapio()
     }
 
-    var disciplinas = listOf<Cardapio>()
+    var cardapio = listOf<Cardapio>()
 
-    fun taskDisciplinas() {
-        this.disciplinas = CardapioService.getCardapio()
-        recyclerCardapio?.adapter = CardapioAdapter(this.disciplinas) {onClickDisciplina(it)}
+    fun taskCardapio() {
+        Thread {
+            this.cardapio = CardapioService.getCardapio()
+            runOnUiThread() {
+                recyclerCardapio?.adapter =
+                    CardapioAdapter(this.cardapio) {
+                        onClickCardapio(it)
+                    }
+            }
+
+        }.start()
+
     }
 
-    fun onClickDisciplina(cardapio: Cardapio) {
+    fun onClickCardapio(cardapio: Cardapio) {
         val it = Intent(this, CardapioDetailActivity::class.java)
         it.putExtra("produto", cardapio)
         startActivity(it)
@@ -65,6 +74,10 @@ class CardapioActivity: DebugActivity() {
         }
         else if (id == R.id.action_config) {
             Toast.makeText(context, "Botão de Config", Toast.LENGTH_LONG).show()
+        }
+        else if (id == R.id.action_nova) {
+            val it = Intent(this, NovoProdutoActivity::class.java)
+            startActivity(it)
         }
         else if (id == android.R.id.home) {
             finish()

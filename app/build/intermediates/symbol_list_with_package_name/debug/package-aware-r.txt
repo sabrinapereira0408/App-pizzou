@@ -1291,6 +1291,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_nova
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1312,6 +1313,7 @@ id baseline
 id beginOnFirstDraw
 id beginning
 id blocking
+id botaoSalvar
 id botaozinho
 id bottom
 id bounce
@@ -1327,6 +1329,7 @@ id center_horizontal
 id center_vertical
 id chain
 id chains
+id checkBox
 id checkbox
 id checked
 id chronometer
@@ -1345,6 +1348,7 @@ id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
 id deltaRelative
+id descricao
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1379,6 +1383,7 @@ id filled
 id fixed
 id flip
 id forever
+id foto
 id ghost_view
 id gone
 id graph
@@ -1427,6 +1432,7 @@ id nav_promocao
 id nav_sair
 id navigation_header_container
 id never
+id nomeProduto
 id none
 id normal
 id notification_background
@@ -1521,9 +1527,12 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView
 id textView2
 id textView3
 id textView4
+id textView6
+id textView7
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1614,6 +1623,7 @@ layout activity_cardapio_detail
 layout activity_configs
 layout activity_main
 layout activity_menu
+layout activity_novo_produto
 layout activity_promocao
 layout activity_taxaentrega
 layout adapter_cardapio
@@ -1680,6 +1690,7 @@ string abc_toolbar_collapse_description
 string action_atualizar
 string action_buscar
 string action_config
+string action_novo
 string action_sair
 string app_name
 string appbar_scrolling_view_behavior

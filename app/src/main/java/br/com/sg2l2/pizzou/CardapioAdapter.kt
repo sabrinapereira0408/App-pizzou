@@ -43,6 +43,7 @@ class CardapioAdapter(
 
         holder.cardNome.text = produto.nome
         holder.cardProgress.visibility = View.VISIBLE
+        
 
         Picasso.with(holder.itemView.context).load(produto.foto).fit().into(holder.cardImg,
         object: com.squareup.picasso.Callback{

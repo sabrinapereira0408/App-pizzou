@@ -14,6 +14,10 @@ class PromocaoActivity: DebugActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_promocao)
 
+        val professor = Prefs.getString("professor")
+
+        Toast.makeText(this, professor, Toast.LENGTH_LONG).show()
+
         this.generic_layout = layoutMenuLateral
 
         setSupportActionBar(toolbar_view)
