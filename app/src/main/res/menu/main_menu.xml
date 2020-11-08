@@ -10,19 +10,19 @@
         /> -->
     <item
         android:id="@+id/action_atualizar"
-        android:icon="@drawable/ic_atualizar_black"
+        android:icon="@drawable/ic_atualizar_white"
         android:title="@string/action_atualizar"
         app:showAsAction="ifRoom"
         />
     <item
         android:id="@+id/action_nova"
-        android:icon="@drawable/ic_adicionar_black"
+        android:icon="@drawable/ic_adicionar_white"
         android:title="@string/action_novo"
         />
 
     <item
         android:id="@+id/action_buscar"
-        android:icon="@drawable/ic_buscar_black"
+        android:icon="@drawable/ic_buscar_white"
         android:title="@string/action_buscar"
         app:showAsAction="always"
         />

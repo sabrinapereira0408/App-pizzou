@@ -30,9 +30,9 @@ public final class PizzouDatabase_Impl extends PizzouDatabase {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `cardapio` (`id` INTEGER NOT NULL, `nome` TEXT NOT NULL, `foto` TEXT NOT NULL, PRIMARY KEY(`id`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `cardapio` (`id` INTEGER NOT NULL, `nome` TEXT NOT NULL, `foto` TEXT NOT NULL, `preco` TEXT NOT NULL, PRIMARY KEY(`id`))");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '640ef6e300fd9c52f9b6b3663b994526')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '72b74a23f3a8f4c5f828d7f6b42897f4')");
       }
 
       @Override
@@ -76,10 +76,11 @@ public final class PizzouDatabase_Impl extends PizzouDatabase {
 
       @Override
       protected RoomOpenHelper.ValidationResult onValidateSchema(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsCardapio = new HashMap<String, TableInfo.Column>(3);
+        final HashMap<String, TableInfo.Column> _columnsCardapio = new HashMap<String, TableInfo.Column>(4);
         _columnsCardapio.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsCardapio.put("nome", new TableInfo.Column("nome", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsCardapio.put("foto", new TableInfo.Column("foto", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsCardapio.put("preco", new TableInfo.Column("preco", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysCardapio = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesCardapio = new HashSet<TableInfo.Index>(0);
         final TableInfo _infoCardapio = new TableInfo("cardapio", _columnsCardapio, _foreignKeysCardapio, _indicesCardapio);
@@ -91,7 +92,7 @@ public final class PizzouDatabase_Impl extends PizzouDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "640ef6e300fd9c52f9b6b3663b994526", "caa929b961dd17e318b7dcf3ac719068");
+    }, "72b74a23f3a8f4c5f828d7f6b42897f4", "09b10664eb369ed6a0911b291cce2551");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

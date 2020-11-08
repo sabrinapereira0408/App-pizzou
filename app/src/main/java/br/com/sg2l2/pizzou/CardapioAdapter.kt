@@ -19,10 +19,12 @@ class CardapioAdapter(
         val cardNome: TextView
         val cardImg: ImageView
         val cardProgress: ProgressBar
+        val cardPreco: TextView
 
         init {
             cardNome = view.findViewById(R.id.cardNome)
             cardImg = view.findViewById(R.id.cardImg)
+            cardPreco = view.findViewById(R.id.cardPreco)
             cardProgress = view.findViewById(R.id.cardProgress)
         }
     }
@@ -42,6 +44,7 @@ class CardapioAdapter(
         val produto = this.cardapios[posicao]
 
         holder.cardNome.text = produto.nome
+        holder.cardPreco.text = produto.preco
         holder.cardProgress.visibility = View.VISIBLE
         
 

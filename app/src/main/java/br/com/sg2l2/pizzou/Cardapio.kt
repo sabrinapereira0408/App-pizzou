@@ -11,6 +11,7 @@ class Cardapio: Serializable {
     var id:Long = 0
     var nome = ""
     var foto = ""
+    var preco = ""
 
     override fun toString(): String {
         return "Pizza (nome=$nome)"

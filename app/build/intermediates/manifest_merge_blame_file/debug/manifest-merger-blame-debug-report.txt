@@ -10,85 +10,282 @@
 9        android:targetSdkVersion="30" />
 9-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml
 10
-11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:5:5-67
-11-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:5:22-64
-12
-13    <application
-13-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:7:5-37:19
-14        android:name="br.com.sg2l2.pizzou.PizzouApplication"
-14-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:8:9-42
-15        android:allowBackup="true"
-15-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:9:9-35
-16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-16-->[androidx.core:core:1.3.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\3fad7ea4f0b845c6f6667debb95e1494\core-1.3.1\AndroidManifest.xml:24:18-86
-17        android:debuggable="true"
-18        android:extractNativeLibs="false"
-19        android:icon="@mipmap/ic_launcher"
-19-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:10:9-43
-20        android:label="@string/app_name"
-20-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:11:9-41
-21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:12:9-54
-22        android:supportsRtl="true"
-22-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:13:9-35
-23        android:testOnly="true"
-24        android:theme="@style/AppTheme" >
-24-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:14:9-40
-25        <activity android:name="br.com.sg2l2.pizzou.NovoProdutoActivity" />
-25-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:15:9-66
-25-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:15:19-54
-26        <activity android:name="br.com.sg2l2.pizzou.CardapioDetailActivity" />
-26-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:16:9-60
-26-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:16:19-57
-27        <activity
-27-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:17:9-19:55
-28            android:name="br.com.sg2l2.pizzou.ConfigActivity"
-28-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:18:13-43
-29            android:theme="@style/AppTheme.Toolbar" />
-29-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:19:13-52
-30        <activity
-30-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:20:9-22:55
-31            android:name="br.com.sg2l2.pizzou.PromocaoActivity"
-31-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:21:13-45
-32            android:theme="@style/AppTheme.Toolbar" />
-32-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:22:13-52
-33        <activity android:name="br.com.sg2l2.pizzou.TaxaEntregaActivity" />
-33-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:23:9-57
-33-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:23:19-54
-34        <activity
-34-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:24:9-26:55
-35            android:name="br.com.sg2l2.pizzou.CardapioActivity"
-35-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:25:13-45
-36            android:theme="@style/AppTheme.Toolbar" />
-36-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:26:13-52
-37        <activity
-37-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:27:9-29:55
-38            android:name="br.com.sg2l2.pizzou.MenuActivity"
-38-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:28:13-41
-39            android:theme="@style/AppTheme.Toolbar" />
-39-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:29:13-52
-40        <activity android:name="br.com.sg2l2.pizzou.MainActivity" >
-40-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:30:9-36:20
-40-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:30:19-47
-41            <intent-filter>
-41-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:31:13-35:29
-42                <action android:name="android.intent.action.MAIN" />
-42-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:32:17-69
-42-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:32:25-66
-43
-44                <category android:name="android.intent.category.LAUNCHER" />
-44-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:34:17-77
-44-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:34:27-74
-45            </intent-filter>
-46        </activity>
-47
-48        <service
-48-->[androidx.room:room-runtime:2.2.3] C:\Users\User\.gradle\caches\transforms-2\files-2.1\2488279200d4f1e8befc4ecb19a23fcc\room-runtime-2.2.3\AndroidManifest.xml:25:9-27:40
-49            android:name="androidx.room.MultiInstanceInvalidationService"
-49-->[androidx.room:room-runtime:2.2.3] C:\Users\User\.gradle\caches\transforms-2\files-2.1\2488279200d4f1e8befc4ecb19a23fcc\room-runtime-2.2.3\AndroidManifest.xml:26:13-74
-50            android:exported="false" />
-50-->[androidx.room:room-runtime:2.2.3] C:\Users\User\.gradle\caches\transforms-2\files-2.1\2488279200d4f1e8befc4ecb19a23fcc\room-runtime-2.2.3\AndroidManifest.xml:27:13-37
-51    </application>
-52
-53</manifest>
+11    <uses-feature
+11-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:5:5-7:35
+12        android:glEsVersion="0x00020000"
+12-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:6:9-41
+13        android:required="true" />
+13-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:7:9-32
+14
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:9:5-67
+15-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:9:22-64
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:11:5-79
+16-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:11:22-76
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:12:5-81
+17-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:12:22-78
+18
+19    <!-- Include required permissions for Google Maps API to run. -->
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c8007ed3aace833c3b65a3f14b8cf906\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+20-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c8007ed3aace833c3b65a3f14b8cf906\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:22-76
+21    <uses-permission android:name="android.permission.WAKE_LOCK" />
+21-->[com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\3a619ee0e0df8344302ab08529796d91\jetified-firebase-measurement-connector-impl-16.0.1\AndroidManifest.xml:24:5-68
+21-->[com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\3a619ee0e0df8344302ab08529796d91\jetified-firebase-measurement-connector-impl-16.0.1\AndroidManifest.xml:24:22-65
+22    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+22-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:26:5-110
+22-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:26:22-107
+23    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+23-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ad5c9b605cb4955b3614dec54db41219\jetified-firebase-iid-17.0.2\AndroidManifest.xml:26:5-82
+23-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ad5c9b605cb4955b3614dec54db41219\jetified-firebase-iid-17.0.2\AndroidManifest.xml:26:22-79
+24
+25    <application
+25-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:14:5-59:19
+26        android:name="br.com.sg2l2.pizzou.PizzouApplication"
+26-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:15:9-42
+27        android:allowBackup="true"
+27-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:16:9-35
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.3.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f0776336e12c4206f5081046e343b9ba\core-1.3.1\AndroidManifest.xml:24:18-86
+29        android:debuggable="true"
+30        android:extractNativeLibs="false"
+31        android:icon="@mipmap/ic_launcher"
+31-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:17:9-43
+32        android:label="@string/app_name"
+32-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:18:9-41
+33        android:roundIcon="@mipmap/ic_launcher_round"
+33-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:19:9-54
+34        android:supportsRtl="true"
+34-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:20:9-35
+35        android:testOnly="true"
+36        android:theme="@style/AppTheme" >
+36-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:21:9-40
+37        <activity android:name="br.com.sg2l2.pizzou.MapasActivity" />
+37-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:22:9-60
+37-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:22:19-48
+38
+39        <meta-data
+39-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:24:9-26:69
+40            android:name="com.google.android.gms.version"
+40-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:25:13-58
+41            android:value="@integer/google_play_services_version" />
+41-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:26:13-66
+42        <meta-data
+42-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:27:9-29:47
+43            android:name="com.google.android.maps.v2.API_KEY"
+43-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:28:13-62
+44            android:value="@string/API_KEY" />
+44-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:29:13-44
+45
+46        <activity android:name="br.com.sg2l2.pizzou.NovoProdutoActivity" />
+46-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:31:9-57
+46-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:31:19-54
+47        <activity android:name="br.com.sg2l2.pizzou.CardapioDetailActivity" />
+47-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:32:9-60
+47-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:32:19-57
+48        <activity
+48-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:33:9-35:55
+49            android:name="br.com.sg2l2.pizzou.ConfigActivity"
+49-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:34:13-43
+50            android:theme="@style/AppTheme.Toolbar" />
+50-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:35:13-52
+51        <activity
+51-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:36:9-38:55
+52            android:name="br.com.sg2l2.pizzou.PromocaoActivity"
+52-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:37:13-45
+53            android:theme="@style/AppTheme.Toolbar" />
+53-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:38:13-52
+54        <activity android:name="br.com.sg2l2.pizzou.TaxaEntregaActivity" />
+54-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:39:9-57
+54-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:39:19-54
+55        <activity
+55-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:40:9-42:55
+56            android:name="br.com.sg2l2.pizzou.CardapioActivity"
+56-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:41:13-45
+57            android:theme="@style/AppTheme.Toolbar" />
+57-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:42:13-52
+58        <activity
+58-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:43:9-45:55
+59            android:name="br.com.sg2l2.pizzou.MenuActivity"
+59-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:44:13-41
+60            android:theme="@style/AppTheme.Toolbar" />
+60-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:45:13-52
+61        <activity android:name="br.com.sg2l2.pizzou.MainActivity" >
+61-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:46:9-52:20
+61-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:46:19-47
+62            <intent-filter>
+62-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:47:13-51:29
+63                <action android:name="android.intent.action.MAIN" />
+63-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:48:17-69
+63-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:48:25-66
+64
+65                <category android:name="android.intent.category.LAUNCHER" />
+65-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:50:17-77
+65-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:50:27-74
+66            </intent-filter>
+67        </activity>
+68
+69        <service android:name="br.com.sg2l2.pizzou.MyFirebaseMessagingService" >
+69-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:54:9-58:19
+69-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:54:18-60
+70            <intent-filter>
+70-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:55:13-57:29
+71                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+71-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:56:17-78
+71-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:56:25-75
+72            </intent-filter>
+73        </service>
+74        <service
+74-->[androidx.room:room-runtime:2.2.3] C:\Users\User\.gradle\caches\transforms-2\files-2.1\0b28708f634245231b259765154baee1\room-runtime-2.2.3\AndroidManifest.xml:25:9-27:40
+75            android:name="androidx.room.MultiInstanceInvalidationService"
+75-->[androidx.room:room-runtime:2.2.3] C:\Users\User\.gradle\caches\transforms-2\files-2.1\0b28708f634245231b259765154baee1\room-runtime-2.2.3\AndroidManifest.xml:26:13-74
+76            android:exported="false" />
+76-->[androidx.room:room-runtime:2.2.3] C:\Users\User\.gradle\caches\transforms-2\files-2.1\0b28708f634245231b259765154baee1\room-runtime-2.2.3\AndroidManifest.xml:27:13-37
+77        <!--
+78             FirebaseMessagingService performs security checks at runtime,
+79             no need for explicit permissions despite exported="true"
+80        -->
+81        <service
+81-->[com.google.firebase:firebase-messaging:17.3.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\06bf1948ada4a6c80c0d345dc3696d31\jetified-firebase-messaging-17.3.2\AndroidManifest.xml:28:9-34:19
+82            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+82-->[com.google.firebase:firebase-messaging:17.3.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\06bf1948ada4a6c80c0d345dc3696d31\jetified-firebase-messaging-17.3.2\AndroidManifest.xml:29:13-82
+83            android:exported="true" >
+83-->[com.google.firebase:firebase-messaging:17.3.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\06bf1948ada4a6c80c0d345dc3696d31\jetified-firebase-messaging-17.3.2\AndroidManifest.xml:30:13-36
+84            <intent-filter android:priority="-500" >
+84-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:55:13-57:29
+85                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+85-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:56:17-78
+85-->C:\Users\User\Desktop\Faculdade\App-pizzou\app\src\main\AndroidManifest.xml:56:25-75
+86            </intent-filter>
+87        </service> <!-- Needs to be explicitly declared on P+ -->
+88        <uses-library
+88-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c8007ed3aace833c3b65a3f14b8cf906\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+89            android:name="org.apache.http.legacy"
+89-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c8007ed3aace833c3b65a3f14b8cf906\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+90            android:required="false" />
+90-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c8007ed3aace833c3b65a3f14b8cf906\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+91
+92        <service
+92-->[com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\3a619ee0e0df8344302ab08529796d91\jetified-firebase-measurement-connector-impl-16.0.1\AndroidManifest.xml:27:9-31:19
+93            android:name="com.google.firebase.components.ComponentDiscoveryService"
+93-->[com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\3a619ee0e0df8344302ab08529796d91\jetified-firebase-measurement-connector-impl-16.0.1\AndroidManifest.xml:27:18-89
+94            android:exported="false" >
+94-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ad5c9b605cb4955b3614dec54db41219\jetified-firebase-iid-17.0.2\AndroidManifest.xml:31:13-37
+95            <meta-data
+95-->[com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\3a619ee0e0df8344302ab08529796d91\jetified-firebase-measurement-connector-impl-16.0.1\AndroidManifest.xml:28:13-30:85
+96                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+96-->[com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\3a619ee0e0df8344302ab08529796d91\jetified-firebase-measurement-connector-impl-16.0.1\AndroidManifest.xml:29:17-139
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.firebase:firebase-measurement-connector-impl:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\3a619ee0e0df8344302ab08529796d91\jetified-firebase-measurement-connector-impl-16.0.1\AndroidManifest.xml:30:17-82
+98            <meta-data
+98-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ad5c9b605cb4955b3614dec54db41219\jetified-firebase-iid-17.0.2\AndroidManifest.xml:32:13-34:85
+99                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+99-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ad5c9b605cb4955b3614dec54db41219\jetified-firebase-iid-17.0.2\AndroidManifest.xml:33:17-96
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ad5c9b605cb4955b3614dec54db41219\jetified-firebase-iid-17.0.2\AndroidManifest.xml:34:17-82
+101        </service>
+102
+103        <receiver
+103-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:29:9-33:20
+104            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+104-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:30:13-85
+105            android:enabled="true"
+105-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:31:13-35
+106            android:exported="false" >
+106-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:32:13-37
+107        </receiver>
+108        <receiver
+108-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:34:9-42:20
+109            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+109-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:35:13-100
+110            android:enabled="true"
+110-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:36:13-35
+111            android:exported="true"
+111-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:37:13-36
+112            android:permission="android.permission.INSTALL_PACKAGES" >
+112-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:38:13-69
+113            <intent-filter>
+113-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:39:13-41:29
+114                <action android:name="com.android.vending.INSTALL_REFERRER" />
+114-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:40:17-79
+114-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:40:25-76
+115            </intent-filter>
+116        </receiver>
+117
+118        <service
+118-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:44:9-47:40
+119            android:name="com.google.android.gms.measurement.AppMeasurementService"
+119-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:45:13-84
+120            android:enabled="true"
+120-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:46:13-35
+121            android:exported="false" />
+121-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:47:13-37
+122        <service
+122-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:48:9-52:72
+123            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+123-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:49:13-87
+124            android:enabled="true"
+124-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:50:13-35
+125            android:exported="false"
+125-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:51:13-37
+126            android:permission="android.permission.BIND_JOB_SERVICE" />
+126-->[com.google.firebase:firebase-analytics:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9386a4a46c11d7618916be9c80239517\jetified-firebase-analytics-16.0.1\AndroidManifest.xml:52:13-69
+127
+128        <receiver
+128-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ad5c9b605cb4955b3614dec54db41219\jetified-firebase-iid-17.0.2\AndroidManifest.xml:37:9-44:20
+129            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+129-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ad5c9b605cb4955b3614dec54db41219\jetified-firebase-iid-17.0.2\AndroidManifest.xml:38:13-78
+130            android:exported="true"
+130-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ad5c9b605cb4955b3614dec54db41219\jetified-firebase-iid-17.0.2\AndroidManifest.xml:39:13-36
+131            android:permission="com.google.android.c2dm.permission.SEND" >
+131-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ad5c9b605cb4955b3614dec54db41219\jetified-firebase-iid-17.0.2\AndroidManifest.xml:40:13-73
+132            <intent-filter>
+132-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ad5c9b605cb4955b3614dec54db41219\jetified-firebase-iid-17.0.2\AndroidManifest.xml:41:13-43:29
+133                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+133-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ad5c9b605cb4955b3614dec54db41219\jetified-firebase-iid-17.0.2\AndroidManifest.xml:42:17-81
+133-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ad5c9b605cb4955b3614dec54db41219\jetified-firebase-iid-17.0.2\AndroidManifest.xml:42:25-78
+134            </intent-filter>
+135        </receiver>
+136        <!--
+137             FirebaseInstanceIdService performs security checks at runtime,
+138             no need for explicit permissions despite exported="true"
+139        -->
+140        <service
+140-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ad5c9b605cb4955b3614dec54db41219\jetified-firebase-iid-17.0.2\AndroidManifest.xml:50:9-56:19
+141            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+141-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ad5c9b605cb4955b3614dec54db41219\jetified-firebase-iid-17.0.2\AndroidManifest.xml:51:13-77
+142            android:exported="true" >
+142-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ad5c9b605cb4955b3614dec54db41219\jetified-firebase-iid-17.0.2\AndroidManifest.xml:52:13-36
+143            <intent-filter android:priority="-500" >
+143-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ad5c9b605cb4955b3614dec54db41219\jetified-firebase-iid-17.0.2\AndroidManifest.xml:53:13-55:29
+143-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ad5c9b605cb4955b3614dec54db41219\jetified-firebase-iid-17.0.2\AndroidManifest.xml:53:28-51
+144                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+144-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ad5c9b605cb4955b3614dec54db41219\jetified-firebase-iid-17.0.2\AndroidManifest.xml:54:17-80
+144-->[com.google.firebase:firebase-iid:17.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ad5c9b605cb4955b3614dec54db41219\jetified-firebase-iid-17.0.2\AndroidManifest.xml:54:25-77
+145            </intent-filter>
+146        </service>
+147
+148        <provider
+148-->[com.google.firebase:firebase-common:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\afdb5af18c05c0c463e7ff71d6ba606c\jetified-firebase-common-16.0.1\AndroidManifest.xml:10:9-14:39
+149            android:name="com.google.firebase.provider.FirebaseInitProvider"
+149-->[com.google.firebase:firebase-common:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\afdb5af18c05c0c463e7ff71d6ba606c\jetified-firebase-common-16.0.1\AndroidManifest.xml:11:13-77
+150            android:authorities="br.com.sg2l2.pizzou.firebaseinitprovider"
+150-->[com.google.firebase:firebase-common:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\afdb5af18c05c0c463e7ff71d6ba606c\jetified-firebase-common-16.0.1\AndroidManifest.xml:12:13-72
+151            android:exported="false"
+151-->[com.google.firebase:firebase-common:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\afdb5af18c05c0c463e7ff71d6ba606c\jetified-firebase-common-16.0.1\AndroidManifest.xml:13:13-37
+152            android:initOrder="100" />
+152-->[com.google.firebase:firebase-common:16.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\afdb5af18c05c0c463e7ff71d6ba606c\jetified-firebase-common-16.0.1\AndroidManifest.xml:14:13-36
+153
+154        <activity
+154-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\fe913c8bc19bf77ff965bb5a8ff714bc\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+155            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+155-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\fe913c8bc19bf77ff965bb5a8ff714bc\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+156            android:exported="false"
+156-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\fe913c8bc19bf77ff965bb5a8ff714bc\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+157            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+157-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\fe913c8bc19bf77ff965bb5a8ff714bc\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+158    </application>
+159
+160</manifest>

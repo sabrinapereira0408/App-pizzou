@@ -12,6 +12,7 @@ class NovoProdutoActivity : DebugActivity() {
             val d = Cardapio()
             d.nome = nomeProduto.text.toString()
             d.foto = foto.text.toString()
+            d.preco =  "R$" + preco.text.toString()
 
             Thread {
                 CardapioService.saveProduto(d)

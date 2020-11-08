@@ -63,6 +63,12 @@ open class DebugActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
                 startActivity(intent)
             }
 
+            R.id.nav_localizacao -> {
+                val intent = Intent(this, MapasActivity::class.java)
+                Toast.makeText(this, "Menu Localização", Toast.LENGTH_SHORT).show()
+                startActivity(intent)
+            }
+
             R.id.nav_sair -> {
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)

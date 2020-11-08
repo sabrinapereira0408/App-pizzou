@@ -48,10 +48,18 @@ class CardapioActivity: DebugActivity() {
                     CardapioAdapter(this.cardapio) {
                         onClickCardapio(it)
                     }
+                enviaNotificacao(this.cardapio[0])
             }
 
         }.start()
 
+    }
+
+    fun enviaNotificacao(cardapio: Cardapio) {
+        val intent = Intent(this, CardapioActivity::class.java)
+        intent.putExtra("cardapio", cardapio)
+
+        NotificationUtil.create(1, intent, "Pizzou", "${cardapio.nome} daquele jeitão 🍕 acessa o app ai 🤩")
     }
 
     fun onClickCardapio(cardapio: Cardapio) {

@@ -27,7 +27,7 @@ public final class CardapioDAO_Impl implements CardapioDAO {
     this.__insertionAdapterOfCardapio = new EntityInsertionAdapter<Cardapio>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `cardapio` (`id`,`nome`,`foto`) VALUES (?,?,?)";
+        return "INSERT OR ABORT INTO `cardapio` (`id`,`nome`,`foto`,`preco`) VALUES (?,?,?,?)";
       }
 
       @Override
@@ -42,6 +42,11 @@ public final class CardapioDAO_Impl implements CardapioDAO {
           stmt.bindNull(3);
         } else {
           stmt.bindString(3, value.getFoto());
+        }
+        if (value.getPreco() == null) {
+          stmt.bindNull(4);
+        } else {
+          stmt.bindString(4, value.getPreco());
         }
       }
     };
@@ -94,6 +99,7 @@ public final class CardapioDAO_Impl implements CardapioDAO {
       final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
       final int _cursorIndexOfNome = CursorUtil.getColumnIndexOrThrow(_cursor, "nome");
       final int _cursorIndexOfFoto = CursorUtil.getColumnIndexOrThrow(_cursor, "foto");
+      final int _cursorIndexOfPreco = CursorUtil.getColumnIndexOrThrow(_cursor, "preco");
       final Cardapio _result;
       if(_cursor.moveToFirst()) {
         _result = new Cardapio();
@@ -106,6 +112,9 @@ public final class CardapioDAO_Impl implements CardapioDAO {
         final String _tmpFoto;
         _tmpFoto = _cursor.getString(_cursorIndexOfFoto);
         _result.setFoto(_tmpFoto);
+        final String _tmpPreco;
+        _tmpPreco = _cursor.getString(_cursorIndexOfPreco);
+        _result.setPreco(_tmpPreco);
       } else {
         _result = null;
       }
@@ -126,6 +135,7 @@ public final class CardapioDAO_Impl implements CardapioDAO {
       final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
       final int _cursorIndexOfNome = CursorUtil.getColumnIndexOrThrow(_cursor, "nome");
       final int _cursorIndexOfFoto = CursorUtil.getColumnIndexOrThrow(_cursor, "foto");
+      final int _cursorIndexOfPreco = CursorUtil.getColumnIndexOrThrow(_cursor, "preco");
       final List<Cardapio> _result = new ArrayList<Cardapio>(_cursor.getCount());
       while(_cursor.moveToNext()) {
         final Cardapio _item;
@@ -139,6 +149,9 @@ public final class CardapioDAO_Impl implements CardapioDAO {
         final String _tmpFoto;
         _tmpFoto = _cursor.getString(_cursorIndexOfFoto);
         _item.setFoto(_tmpFoto);
+        final String _tmpPreco;
+        _tmpPreco = _cursor.getString(_cursorIndexOfPreco);
+        _item.setPreco(_tmpPreco);
         _result.add(_item);
       }
       return _result;
